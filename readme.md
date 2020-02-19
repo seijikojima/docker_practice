@@ -5,4 +5,4 @@ docker commit --change "ENV MODEL_NAME equal" serving_base equal
 docker run -d -p 8501:8501 --name equal -t tensorflow_serving  
 
 # post request
-yourip:8501/v1/models/equal:predict  
+http://yourip:8501/v1/models/equal:predict  
